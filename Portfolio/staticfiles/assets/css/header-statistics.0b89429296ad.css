@@ -1,0 +1,100 @@
+/* Header Statistics Styles */
+.header-statistics {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.header-statistics .statistics__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.header-statistics .statistics__item {
+    background: rgba(var(--light-primary), 0.3);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--accent), 0.1);
+}
+
+.header-statistics .statistics__item:hover {
+    transform: translateY(-5px);
+    background: rgba(var(--light-primary), 0.5);
+    border-color: rgba(var(--accent), 0.3);
+}
+
+.header-statistics .statistics__number {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--ff-mono);
+    color: rgba(var(--accent), 1);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.header-statistics .statistics__title {
+    font-size: 0.9rem;
+    color: rgba(var(--lightest-secondary), 1);
+    margin: 0;
+}
+
+.header-statistics .statistics__icon {
+    font-size: 1.5rem;
+    color: rgba(var(--accent), 0.7);
+    margin-bottom: 0.5rem;
+}
+
+/* Animation for statistics */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-statistics .statistics__item {
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+.header-statistics .statistics__item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.header-statistics .statistics__item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.header-statistics .statistics__item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-statistics .statistics__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-statistics .statistics__container {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-statistics .statistics__item {
+        padding: 0.8rem;
+    }
+    
+    .header-statistics .statistics__number {
+        font-size: 1.75rem;
+    }
+    
+    .header-statistics .statistics__title {
+        font-size: 0.8rem;
+    }
+}

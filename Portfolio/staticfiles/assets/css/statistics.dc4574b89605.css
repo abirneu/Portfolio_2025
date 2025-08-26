@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Statistics Section
+--------------------------------------------------------------*/
+.statistics {
+  padding: 20px 0;
+}
+
+.statistics__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.statistics__item {
+  background: rgba(var(--light-primary), 0.3);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(var(--accent), 0.1);
+}
+
+.statistics__item:hover {
+  transform: translateY(-5px);
+  background: rgba(var(--light-primary), 0.5);
+  border-color: rgba(var(--accent), 0.3);
+}
+
+.statistics__number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--ff-mono);
+  color: rgba(var(--accent), 1);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.statistics__title {
+  font-size: 1rem;
+  color: rgba(var(--lightest-secondary), 1);
+  margin: 0;
+}
+
+.statistics__icon {
+  font-size: 2rem;
+  color: rgba(var(--accent), 0.7);
+  margin-bottom: 1rem;
+}
+
+/* Animation for numbers */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.statistics__number {
+  animation: countUp 1s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .statistics__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .statistics__item {
+    padding: 1rem;
+  }
+  
+  .statistics__number {
+    font-size: 2rem;
+  }
+}
