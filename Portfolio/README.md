@@ -192,9 +192,6 @@ Configure the build settings to match your Django project's requirements. Define
 
 You may follow here the youtube guide on how to setup Cloudinary & Google Django Recaptcha.
 
-* [Host uploaded images from Django with Cloudinary](https://www.youtube.com/watch?v=fQo9ivqX4xs)
-* [Deploy static files to Cloudinary from a Django app](https://www.youtube.com/watch?v=HQ1kfJpWdRI)
-* [CAPTCHAs in Django forms](https://www.youtube.com/watch?v=QGz_CczcL3Q&t=3s)
 
 6. **Optional Postgres Database Setup**:
 If you choose to deploy with a Postgres database, import dj_database_url in your settings file. Configure the database settings as follows:
@@ -220,10 +217,6 @@ Here is the guide <a href="https://youtu.be/AgTr5mw4zdI?t=929&si=siE8yPqA5ilPcKP
 - Django Recaptcha Setup: https://www.youtube.com/@bugbytes3923
 - Simple Icons: https://cdn.simpleicons.org
 
-## License 
-This project is licensed under the [MIT License](LICENSE).
 
-## Author
- - GitHub - [git-adrianrubico](https://github.com/git-adrianrubico)
- - LinkedIn - [Adrian Rubico]([git-adrianrubico](www.linkedin.com/in/adrianrubico))
+
 
