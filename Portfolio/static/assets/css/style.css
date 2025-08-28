@@ -25,7 +25,7 @@ body {
   font-family: var(--ff-sans);
   background-color: rgba(var(--primary), 1);
   color: rgba(var(--white), 1);
-  position: relative;
+  /* position: relative; */
   background: transparent;
 }
 
@@ -39,6 +39,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+  overflow-y: scroll;
 }
 
 

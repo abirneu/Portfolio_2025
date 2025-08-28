@@ -1,0 +1,84 @@
+/* Mobile-specific styles for header */
+@media (max-width: 992px) {
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* Profile Image Section */
+  #header .profileImg {
+    order: 1;
+    width: 70%;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Description Section */
+  #header .data-row {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Statistics Section */
+  #header .header-statistics {
+    order: 3;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* Contact/Social Section */
+  #header .social-links {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  /* Navigation adjustments */
+  #header .navbar {
+    order: 5;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  /* Make statistics container more compact on mobile */
+  .statistics__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .statistics__item {
+    padding: 0.5rem;
+  }
+
+  .statistics__number {
+    font-size: 1.25rem;
+  }
+
+  .statistics__title {
+    font-size: 0.875rem;
+  }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 576px) {
+  #header .profileImg {
+    width: 85%;
+  }
+
+  .statistics__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  #header h1 {
+    font-size: 1.75rem;
+  }
+
+  #header h2 {
+    font-size: 1rem;
+  }
+}
