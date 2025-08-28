@@ -77,7 +77,9 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-statistics .statistics__container {
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: repeat(3, 1fr);
+
     }
 }
 
